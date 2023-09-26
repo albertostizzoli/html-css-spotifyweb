@@ -24,6 +24,7 @@ body{
     height: 100vh;
 }
 
+
 /* Classi Flex */
 
 .flex{
@@ -35,6 +36,7 @@ body{
 }
 
 /* Container Superiore */
+
 
 /* Header */
 
@@ -60,6 +62,7 @@ header > .flex {
     top: 0;
     right: 0;
 }
+
 
 /*Side-Bar*/
 
@@ -101,9 +104,8 @@ ul, li{
     padding: 6px 10px;
 }
 
-
 .playlist-container {
-    padding: 10px;
+    padding: 15px;
     width: calc(100% / 6 - 20px);
 }
 
@@ -111,37 +113,41 @@ ul, li{
     font-size: 12px;
     margin-top: 5px;
 }
+
 .playlist-container p {
     color: grey;
-    font-size: 10px;
+    font-size: 15px;
     margin: 4px 0;
 }
 
 .playlist-row {
     display: flex;
     flex-direction: row;
-    margin: 15px 0;
+    margin: 20px 0;
 }
+
 .album-box {
     height: 220px;
     width: 150px;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 30px;
     flex-shrink: 0;
 }
+
 .img-box {
     width: inherit;
     height: 150px;
     text-align: center;
     line-height: 150px;
-    position: relative;
-
-
 }
+
 .album-box img {
     width: 100%;
-    object-fit: contain;
-    
+    object-fit: contain;  
+}
+
+.circle{
+    border-radius: 50%;
 }
 
 /* Container Inferiore */
