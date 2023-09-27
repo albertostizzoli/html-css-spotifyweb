@@ -74,6 +74,7 @@ header>.flex {
 .side-bar>.flex {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo-box {
@@ -523,7 +524,7 @@ input[type=range]:focus::-ms-fill-upper {
         flex-wrap: wrap;
     }
 
-     .side-bar{
+     .library{
         overflow-y: auto;
     }
 }
