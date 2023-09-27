@@ -255,7 +255,7 @@ li {
     display: flex;
     flex-direction: row;
     margin: 20px 0;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .album-box {
