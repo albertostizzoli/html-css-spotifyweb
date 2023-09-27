@@ -1,25 +1,25 @@
 /* Generali */
 :root {
-	--color-dark-color: #141922;
-	--color-dark-grey: #282828;
-	--color-black: #000000;
-	--color-white: #FFFFFF;
-	--color-grey: #717171;
-	--color-light-grey: #C1C1C1;
-	--color-highlight: #ADFF2F;
+    --color-dark-color: #141922;
+    --color-dark-grey: #282828;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-grey: #717171;
+    --color-light-grey: #C1C1C1;
+    --color-highlight: #ADFF2F;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.wrapper{
+.wrapper {
     width: 100%;
     height: 100vh;
 }
@@ -27,11 +27,11 @@ body{
 
 /* Classi Flex */
 
-.flex{
+.flex {
     display: flex;
 }
 
-.justify-center{
+.justify-center {
     justify-content: center;
 }
 
@@ -40,7 +40,7 @@ body{
 
 /* Header */
 
-header > .flex {
+header>.flex {
     justify-content: flex-end;
     align-items: center;
 }
@@ -54,7 +54,7 @@ header > .flex {
     color: white;
 }
 
-.call-to-action{
+.call-to-action {
     background-color: rgba(0, 0, 25, 0.5);
     width: calc(100% - 250px);
     height: 70px;
@@ -66,16 +66,17 @@ header > .flex {
 
 /*Side-Bar*/
 
-.side-bar{
+.side-bar {
     width: 250px;
     background-color: var(--color-black);
 }
-.side-bar > .flex{
+
+.side-bar>.flex {
     display: flex;
     flex-direction: column;
 }
 
-.logo-box{
+.logo-box {
     height: 200px;
     padding: 15px;
 }
@@ -85,19 +86,19 @@ header > .flex {
     margin-bottom: 30px;
 }
 
-.menu > div {
-    border-left:transparent 3px solid ;
+.menu>div {
+    border-left: transparent 3px solid;
     height: 40px;
     line-height: 40px;
     font-size: 13px;
 }
 
-.menu >  div:hover {
-    border-left:yellowgreen 3px solid;
+.menu>div:hover {
+    border-left: yellowgreen 3px solid;
     cursor: pointer;
 }
 
-.menu > div:hover span {
+.menu>div:hover span {
     color: white;
     font-weight: bold;
 }
@@ -112,15 +113,17 @@ header > .flex {
 .library {
     padding-top: 15px;
     padding-left: 15px;
-    height: calc(100% - 220px - 80px); 
+    height: calc(100% - 220px - 80px);
     min-height: 150px;
     flex-grow: 1;
 }
+
 .library h3 {
     font-size: 16px;
     color: white;
     margin-bottom: 10px;
 }
+
 .new-library span {
     display: inline-block;
     height: 40px;
@@ -137,6 +140,7 @@ header > .flex {
     font-size: 13px;
     margin: 5px 0;
 }
+
 .all-library {
     display: flex;
     flex-direction: column;
@@ -150,11 +154,13 @@ header > .flex {
     padding-right: 15px;
     height: 80px;
 }
+
 .box .app {
     height: 40px;
     line-height: 40px;
     border-bottom: grey 2px solid;
 }
+
 .box .app svg {
     width: 20px;
     height: 20x;
@@ -171,6 +177,7 @@ header > .flex {
     height: 50px;
     line-height: 50px;
 }
+
 .box .profile img {
     height: 30px;
     width: 30px;
@@ -179,46 +186,50 @@ header > .flex {
     background-color: grey;
     vertical-align: middle;
 }
+
 .box .profile span {
     color: white
 }
 
 /* Container Principale */
 
-main{
+main {
     width: 100%;
     height: calc(100% - 80px);
 }
 
-.main-content{
+.main-content {
     width: calc(100% - 250px);
     background-color: rgb(31, 31, 47);
     padding: 90px 10px 0 10px;
     overflow-y: auto;
 }
 
-.text{
+.text {
     color: var(--color-grey);
 }
 
-.text-secondary{
+.text-secondary {
     color: var(--color-white);
 }
 
-.text:hover{
-    cursor:pointer;
+.text:hover {
+    cursor: pointer;
     color: white;
 }
 
-ul, li{
+ul,
+li {
     list-style: none;
     padding: 6px 10px;
+    display: flex;
+    flex-wrap:nowrap;
 }
 
 .playlist-container {
-    padding: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
 }
-
 
 .playlist-container h4 {
     font-size: 12px;
@@ -231,6 +242,10 @@ ul, li{
     margin: 4px 0;
 }
 
+.playlist-box {
+    padding-top: 10px;
+}
+
 .playlist-row {
     display: flex;
     flex-direction: row;
@@ -241,28 +256,28 @@ ul, li{
     height: 220px;
     width: calc(100% / 6);
     text-align: center;
-    padding-right:30px;
+    padding-right: 30px;
     flex-shrink: 0;
 }
 
 .img-box {
     height: 175px;
     text-align: center;
-    line-height: 150px;
+    line-height: 175px;
 }
 
 .album-box img {
     width: 100%;
-    object-fit: cover;  
+    object-fit: contain;
 }
 
-.circle{
+.circle {
     border-radius: 50%;
 }
 
 /* Container Inferiore */
 
-.play-bar{
+.play-bar {
     width: 100%;
     height: 80px;
     position: fixed;
@@ -270,10 +285,220 @@ ul, li{
     bottom: 0;
     left: 0;
     background-color: var(--color-dark-grey);
+    color: white;
 }
 
+.play-bar>.flex {
+    width: 100%;
+    height: 100%;
+}
 
+.player-left,
+.player-right {
+    height: 100%;
+    width: 200px;
+    max-width: calc(100% / 3);
+    padding: 10px;
+}
 
+/* player left */
 
+.player-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-left img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+.played-title {
+    width: 90px;
+}
+
+.played-title div {
+    font-size: 12px;
+}
+
+.played-title span {
+    font-size: 10px;
+    color: grey;
+}
+
+.player-left i {
+    color: grey;
+}
+
+/* player left */
+
+/* player center */
+.player-center {
+    height: 100%;
+    width: calc(100% - 400px);
+
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.player-center .box-shrink {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.music-control {
+    width: 60%;
+    max-width: 180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music-control .play {
+    font-size: 35px;
+}
+
+.music-bar {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.music-bar label {
+    font-size: 10px;
+}
+
+.player-center input[type=range] {
+    width: 80%;
+    --webkit-appearance: none;
+    margin-top: 15px;
+    background: transparent;
+}
+
+/* player center */
+
+/* player right */
+.player-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-right input {
+    width: 100px;
+}
+
+/* player right */
+
+.player-center input[type=range] {
+    width: 80%px;
+    --webkit-appearance: none;
+    margin-top: 15px;
+    background: transparent;
+}
+
+.player-right input[type=range] {
+    width: 100px;
+    --webkit-appearance: none;
+    background: transparent;
+}
+
+input[type=range]:hover {
+    outline: yellow;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animation: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #555555;
+    border-radius: 3px;
+    border: 0px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #555555;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: #555555;
+    border-radius: 3px;
+    border: 0px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #2497E3;
+    height: 16px;
+    width: 16px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: yellowgreen;
+    border: 0px solid #000000;
+    border-radius: 6px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #555555;
+    border: 0px solid #000000;
+    border-radius: 6px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #2497E3;
+    height: 16px;
+    width: 16px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #555555;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #555555;
+}
 
 

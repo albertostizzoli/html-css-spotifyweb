@@ -197,9 +197,48 @@
         </main>
         <!-- container inferiore -->
         <div class="play-bar">
-            3
+            <div class="flex">
+                <!-- player left -->
+                <div class="player-left">
+                    <img src="img/sinister.jpeg" alt="album in riproduzione">
+                    <div class="played-title">
+                        <div>Sinister</div>
+                        <span>Brano Nome</span>
+                    </div>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+
+                <!-- player center -->
+                <div class="player-center">
+                    <div class="box-shrink">
+                        <div class="music-control">
+                            <i class="fas fa-random"></i>
+                            <i class="fas fa-step-backward"></i>
+                            <i class="far fa-play-circle play"></i>
+                            <i class="fas fa-step-forward"></i>
+                            <i class="fas fa-redo-alt"></i>
+                        </div>
+                        <div class="music-bar">
+                            <form action="">
+                                <label for="music-time">0:25</label>
+                                <input type="range" id="music-time">
+                                <label for="music-time">4:35</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- player right -->
+                <div class="player-right">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-desktop"></i>
+                    <i class="fas fa-volume-up"></i>
+                    <form action="volume">
+                        <input type="range">
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </body>
-
 </html>
