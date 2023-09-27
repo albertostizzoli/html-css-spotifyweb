@@ -55,7 +55,7 @@ header > .flex {
 }
 
 .call-to-action{
-    background-color: var(--color-dark-color);
+    background-color: rgba(0, 0, 25, 0.5);
     width: calc(100% - 250px);
     height: 70px;
     position: fixed;
@@ -70,13 +70,12 @@ header > .flex {
     width: 250px;
     background-color: var(--color-black);
 }
-
 .side-bar > .flex{
+    display: flex;
     flex-direction: column;
-    color: var(--color-dark-grey);
 }
 
-.logo{
+.logo-box{
     height: 200px;
     padding: 15px;
 }
@@ -86,6 +85,103 @@ header > .flex {
     margin-bottom: 30px;
 }
 
+.menu > div {
+    border-left:transparent 3px solid ;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+}
+
+.menu >  div:hover {
+    border-left:yellowgreen 3px solid;
+    cursor: pointer;
+}
+
+.menu > div:hover span {
+    color: white;
+    font-weight: bold;
+}
+
+.menu svg {
+    height: 30px;
+    width: 30px;
+    fill: grey;
+    vertical-align: middle;
+}
+
+.library {
+    padding-top: 15px;
+    padding-left: 15px;
+    height: calc(100% - 220px - 80px); 
+    min-height: 150px;
+    flex-grow: 1;
+}
+.library h3 {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+.new-library span {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background-color: grey;
+    color: black;
+    margin-right: 5px;
+}
+
+.all-library div {
+    font-size: 13px;
+    margin: 5px 0;
+}
+.all-library {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    height: 80%;
+    margin-top: 15px;
+}
+
+.box {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 80px;
+}
+.box .app {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: grey 2px solid;
+}
+.box .app svg {
+    width: 20px;
+    height: 20x;
+    fill: grey;
+    vertical-align: middle;
+}
+
+.box .app span {
+    font-size: 13px;
+    color: white;
+}
+
+.box .profile {
+    height: 50px;
+    line-height: 50px;
+}
+.box .profile img {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: grey;
+    vertical-align: middle;
+}
+.box .profile span {
+    color: white
+}
 
 /* Container Principale */
 
@@ -121,7 +217,6 @@ ul, li{
 
 .playlist-container {
     padding: 15px;
-    width: calc(100% / 6 - 30px);
 }
 
 .playlist-container h4 {
@@ -131,7 +226,7 @@ ul, li{
 
 .playlist-container p {
     color: grey;
-    font-size: 15px;
+    font-size: 10px;
     margin: 4px 0;
 }
 
@@ -150,7 +245,6 @@ ul, li{
 }
 
 .img-box {
-    width: inherit;
     height: 150px;
     text-align: center;
     line-height: 150px;
