@@ -510,9 +510,14 @@ input[type=range]:focus::-ms-fill-upper {
 /* Media Query */
 
 @media screen and (max-width:992px){
-    body{
-        width:992px;
+    .main-content{
+        width:790px;
     }
+
+    .call-to-action{
+        width: 85%;
+    }
+
     
     ul, li{
         display: flex;
