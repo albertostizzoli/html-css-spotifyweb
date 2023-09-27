@@ -267,9 +267,9 @@ li {
 }
 
 .img-box {
-    height: 175px;
+    /*height: 175px;*/
     text-align: center;
-    line-height: 175px;
+    /*line-height: 175px;*/
 }
 
 .album-box img {
