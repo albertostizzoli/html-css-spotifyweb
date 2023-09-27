@@ -219,6 +219,7 @@ ul, li{
     padding: 15px;
 }
 
+
 .playlist-container h4 {
     font-size: 12px;
     margin-top: 5px;
@@ -238,21 +239,21 @@ ul, li{
 
 .album-box {
     height: 220px;
-    width: 150px;
+    width: calc(100% / 6);
     text-align: center;
-    margin-right: 30px;
+    padding-right:30px;
     flex-shrink: 0;
 }
 
 .img-box {
-    height: 150px;
+    height: 175px;
     text-align: center;
     line-height: 150px;
 }
 
 .album-box img {
     width: 100%;
-    object-fit: contain;  
+    object-fit: cover;  
 }
 
 .circle{
