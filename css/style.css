@@ -399,7 +399,7 @@ li {
 /* player right */
 
 .player-center input[type=range] {
-    width: 80%px;
+    width: 80%;
     --webkit-appearance: none;
     margin-top: 15px;
     background: transparent;
@@ -534,3 +534,33 @@ input[type=range]:focus::-ms-fill-upper {
         overflow-y: auto;
     }
 }
+
+@media screen and (max-width:768px){
+    .main-content{
+        width: 600px;
+    }
+
+    .call-to-action{
+        width: 80%;
+    }
+
+    ul, li{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .playlist-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .album-box{
+        width: calc(100% / 3);
+    }
+
+    .library{
+        overflow-y:auto;
+    }
+}
+
+
