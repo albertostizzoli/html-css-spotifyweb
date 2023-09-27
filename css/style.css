@@ -268,7 +268,6 @@ li {
 
 .img-box {
     text-align: center;
-
 }
 
 .album-box img {
@@ -517,7 +516,6 @@ input[type=range]:focus::-ms-fill-upper {
         width: 85%;
     }
 
-    
     ul, li{
         display: flex;
         flex-wrap: wrap;
@@ -526,6 +524,10 @@ input[type=range]:focus::-ms-fill-upper {
     .playlist-row{
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .album-box{
+        width: calc(100% / 4);
     }
 
      .library{
