@@ -661,5 +661,10 @@ input[type=range]::-webkit-slider-thumb {
     }
 }
 
+@media screen and (max-height:150px){
+    .call-to-action{
+        display: none;
+    }
+}
 
 
