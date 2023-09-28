@@ -24,6 +24,26 @@ body {
     height: 100vh;
 }
 
+/*Scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-white); 
+    border-radius: 10px;
+  }
+
+
 
 /* Classi Flex */
 
@@ -52,6 +72,14 @@ header>.flex {
     padding: 10px 50px;
     margin: 15px;
     color: white;
+}
+
+.upgrade:hover {
+    font-size: 14px;
+    padding: 20 100px;
+    border-radius: 40px;
+    margin: 15px;
+    cursor: pointer;
 }
 
 .call-to-action {
@@ -158,6 +186,7 @@ header>.flex {
     padding-left: 15px;
     padding-right: 15px;
     height: 80px;
+    background-color: var(--color-black);;
 }
 
 .box .app {
@@ -176,6 +205,7 @@ header>.flex {
 .box .app span {
     font-size: 13px;
     color: white;
+    cursor: pointer;
 }
 
 .box .profile {
@@ -193,7 +223,8 @@ header>.flex {
 }
 
 .box .profile span {
-    color: white
+    color: white;
+    cursor: pointer;
 }
 
 /* Container Principale */
@@ -229,8 +260,27 @@ li {
     padding: 6px 10px;
     display: flex;
     flex-wrap:nowrap;
+    position: relative;
 }
 
+.border-bottom{
+    border-bottom: 2px solid var(--color-highlight);
+}
+
+.underline{
+    display: none;
+    width: 55px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-28px, 20px);
+}
+
+.main-content li:hover .underline{
+    display: block;
+}
+
+
+/* Container Playlist*/
 .playlist-container {
     padding-left: 15px;
     padding-top: 10px;
@@ -264,10 +314,12 @@ li {
     text-align: center;
     padding-right: 30px;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .img-box {
     text-align: center;
+    position: relative;
 }
 
 .album-box img {
@@ -277,6 +329,29 @@ li {
 
 .circle {
     border-radius: 50%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-highlight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.img-box i{
+    font-size: 2em;
+}
+
+.album-box:hover .overlay{
+    opacity: 1;
 }
 
 /* Container Inferiore */
