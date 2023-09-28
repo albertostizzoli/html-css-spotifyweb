@@ -596,4 +596,66 @@ input[type=range]::-webkit-slider-thumb {
     }
 }
 
+@media screen and (max-width:576px){
+    .main-content{
+        width: calc(100% - 50px)
+    }
+
+    .call-to-action{
+        width: calc(100% - 50px)
+    }
+
+    ul, li{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .playlist-row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .album-box{
+        width: calc(100% / 2);
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo-small{
+        display: block;
+    }
+
+    .side-bar{
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu span{
+        display: none;
+    }
+
+    .box{
+        cursor: pointer;
+    }
+
+    .box span{
+        display: none;
+    }
+
+    .library{
+        display: none;
+        overflow: hidden;
+    }
+
+    #music-time, label{
+        display: none;
+    }
+}
+
+
 
