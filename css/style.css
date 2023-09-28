@@ -80,6 +80,7 @@ header>.flex {
     border-radius: 40px;
     margin: 15px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .call-to-action {
@@ -89,6 +90,7 @@ header>.flex {
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 1000;
 }
 
 
@@ -272,7 +274,7 @@ li {
     width: 55px;
     position: absolute;
     left: 50%;
-    transform: translate(-28px, 20px);
+    transform: translate(-28px, 0);
 }
 
 .main-content li:hover .underline{
@@ -417,7 +419,6 @@ li {
 .player-center {
     height: 100%;
     width: calc(100% - 400px);
-
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -590,6 +591,9 @@ input[type=range]::-webkit-slider-thumb {
         overflow-y:auto;
     }
 
+    #music-time, label{
+        display: none;
+    }
 }
 
 
