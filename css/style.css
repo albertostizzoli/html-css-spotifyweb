@@ -655,6 +655,10 @@ input[type=range]::-webkit-slider-thumb {
     #music-time, label{
         display: none;
     }
+
+    .icons{
+        display: none;
+    }
 }
 
 
